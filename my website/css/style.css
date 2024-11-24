@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+/* Body & Background */
+body {
+    background: linear-gradient(135deg, #7a4d82, #67406e); 
+    color: #f1f1f1;
+    font-size: 1rem;
+    line-height: 1.8;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Image */
+.header-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section without distortion */
+    z-index: 1; /* Sets the image behind the text */
+    opacity: 0.8; 
+}
+
+/* Text Content */
+.header-content {
+    position: relative;
+    z-index: 2; /* Places the text above the image */
+    text-align: center;
+    color: #fff; /* Makes text stand out against the image */
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Adds a shadow */
+    font-family: 'Merriweather', serif;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-style: italic;
+    color: #f8e8f0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* Poet's Biography */
+.biography {
+    background-color: #4a3c55;
+    padding: 40px 20px;
+    margin: 60px 0;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.biography h2 {
+    font-size: 2.5rem;
+    color: #f2c4d4;
+}
+
+.biography p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Poem Section */
+.poem-section {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.poem-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.poem {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    width: 300px;
+}
+
+.poem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.poem h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f2c4d4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.poem p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #d1b4e1;
+}
+
+/* Poetry of the Month */
+.poetry-of-the-month {
+    background-color: #3b2d42;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.poetry-of-the-month h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f2c4d4;
+}
+/* Poetry of the Month */
+.poetry-of-the-month {
+    background-color: #3b2d42;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Reduced the height */
+    flex-direction: column;
+}
+
+.poetry-of-the-month h2 {
+    font-size: 2rem; /* Slightly smaller heading */
+    margin-bottom: 15px;
+    color: #f2c4d4;
+}
+
+.poetry-of-the-month .poem {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px; /* Adjusted padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%; /* Make the width more flexible */
+    max-width: 700px; /* Restrict width a bit */
+    text-align: center;
+}
+
+.poetry-of-the-month .poem h3 {
+    font-size: 1.8rem;
+    color: #f2c4d4;
+    margin-bottom: 15px;
+}
+
+.poetry-of-the-month .poem p {
+    font-size: 1.1rem;
+    color: #d1b4e1;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #2b2d3b;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial {
+    background-color: #3b3e56;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial p {
+    font-weight: 500;
+    color: #e1c6f0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2b2d3b;
+    padding: 40px 20px;
+    color: #f1f1f1;
+    font-size: 1rem;
+    position: relative;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: #f1f1f1;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    color: #f2c4d4;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
